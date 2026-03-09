@@ -6,7 +6,7 @@ We develop scalable algorithms for **graph partitioning**: dividing a graph's ve
 
 Given a graph with **N** vertices and a number **k**, the **graph partitioning problem** asks for a division of the vertex set into **k** blocks of roughly equal size such that the number of edges running between blocks is minimized. The problem is NP-hard and arises in parallel computing (load balancing, domain decomposition), VLSI design, scientific simulations, sparse matrix factorization, route planning, and many other domains.
 
-Our tools tackle this problem at multiple levels of scale and parallelism: from high-quality multilevel methods with evolutionary search, to shared-memory and distributed-memory parallel partitioners, to streaming algorithms that partition graphs too large to fit in memory. We also provide algorithms for **edge partitioning**, **process mapping**, **node ordering** (nested dissection), **hypergraph partitioning**, and **graph clustering**.
+Our tools tackle this problem at multiple levels of scale and parallelism: from high-quality multilevel methods with evolutionary search, to shared-memory and distributed-memory parallel partitioners, to streaming algorithms that partition graphs too large to fit in memory. We also provide algorithms for **edge partitioning**, **process mapping**, **node ordering** (nested dissection), and **graph clustering**. For **hypergraph partitioning**, see our sister organization [KaHyPar](https://github.com/kahypar).
 
 ---
 
