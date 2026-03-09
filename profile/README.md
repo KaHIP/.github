@@ -53,12 +53,3 @@ git clone https://github.com/KaHIP/FREIGHT.git && cd FREIGHT && make
 ./freight hypergraph.hgr --k 8
 ```
 
----
-
-## Key Publications
-
-- Sanders & Schulz. *Think Locally, Act Globally: Highly Balanced Graph Partitioning.* SEA 2013.
-- Meyerhenke, Sanders & Schulz. *Parallel Graph Partitioning for Complex Networks.* IEEE TPDS, 2017.
-- Akhremtsev, Sanders & Schulz. *High-Quality Shared-Memory Graph Partitioning.* IEEE TPDS, 2020.
-- Eyubov, Fonseca Faraj & Schulz. *FREIGHT: Fast Streaming Hypergraph Partitioning.* SEA 2023 (**Best Paper Award**).
-- Chhabra, Kurpicz, Schulz, Schweisgut & Seemaier. *Partitioning Trillion Edge Graphs on Edge Devices.* ACDA 2025.
