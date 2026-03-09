@@ -1,5 +1,9 @@
 # KaHIP &mdash; Karlsruhe High Quality Partitioning
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/KaHIP/logo/main/kahip-logo.png" alt="KaHIP Logo" width="600"/>
+</p>
+
 We develop scalable algorithms for **graph partitioning**: dividing a graph's vertices (or edges) into balanced blocks while minimizing the edges (or vertices) cut between them.
 
 ## The Problem
