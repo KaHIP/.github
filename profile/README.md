@@ -107,6 +107,12 @@ freight_con hypergraph.netl --k=8                        # hypergraph partitioni
 freight_graphs network.graph --k=8                       # graph partitioning
 ```
 
+### fpt-max-cut
+```bash
+brew install KaHIP/kahip/fpt-max-cut
+fpt_max_cut -action kernelization -f network.graph -iterations 1 -total-allowed-solver-time 10
+```
+
 ### VieCut
 ```bash
 brew install KaHIP/kahip/viecut
