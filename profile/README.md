@@ -14,7 +14,7 @@ Our research covers a broad range of graph decomposition problems:
 - **Graph Cuts** -- find minimum and maximum edge cuts in undirected graphs. Applications include network reliability, connectivity analysis, and image segmentation. We provide shared-memory parallel algorithms for exact and inexact minimum cuts, cactus representations of all minimum cuts, and multiterminal cuts.
 - **Graph Clustering** -- identify densely connected communities without requiring a predefined number of clusters. Our tools optimize modularity, support motif-based local clustering, correlation clustering on signed graphs, and streaming approaches for large-scale inputs.
 - **Process Mapping** -- assign communicating processes to hardware topologies so that communication cost is minimized. Closely related to graph partitioning, but accounts for hierarchical network distances.
-- **Hypergraph Partitioning** -- see our sister organization [KaHyPar](https://github.com/kahypar).
+- **Hypergraph Partitioning** -- partition hypergraphs where edges can connect more than two vertices. We provide [FREIGHT](https://github.com/KaHIP/FREIGHT), a fast streaming hypergraph partitioner. For high-quality hypergraph partitioning, see our sister organization [KaHyPar](https://github.com/kahypar).
 
 ---
 
