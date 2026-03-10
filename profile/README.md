@@ -16,18 +16,30 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 
 ## Projects
 
+### Graph Partitioning
+
 | Repository | Description |
 |:-----------|:------------|
-| [KaHIP](https://github.com/KaHIP/KaHIP) | Flagship framework: multilevel partitioning (KaFFPa), evolutionary algorithms (KaFFPaE), distributed-memory parallel partitioning (ParHIP), edge partitioning, node ordering, process mapping, and ILP-based improvement |
+| [KaHIP](https://github.com/KaHIP/KaHIP) | Flagship framework: multilevel partitioning (KaFFPa), evolutionary algorithms (KaFFPaE), distributed-memory parallel partitioning (ParHIP), edge partitioning, node ordering, and ILP-based improvement |
 | [KaMinPar](https://github.com/KaHIP/KaMinPar) | Shared-memory and distributed-memory parallel partitioner optimized for speed and low memory usage |
 | [mt-KaHIP](https://github.com/KaHIP/mt-KaHIP) | Shared-memory parallel multilevel graph partitioning using TBB and OpenMP |
 | [HeiStream](https://github.com/KaHIP/HeiStream) | Buffered streaming graph and edge partitioner for graphs that do not fit in memory |
 | [FREIGHT](https://github.com/KaHIP/FREIGHT) | Fast streaming hypergraph partitioner (SEA 2023 Best Paper Award) |
 | [CompressedStreamingGraphPartitioning](https://github.com/KaHIP/CompressedStreamingGraphPartitioning) | Memory-efficient streaming partitioning via compressed block assignments |
-| [CluStRE](https://github.com/KaHIP/CluStRE) | Streaming graph clustering with multi-stage refinement |
+
+### Process Mapping
+
+| Repository | Description |
+|:-----------|:------------|
 | [IntegratedProcessMapping](https://github.com/KaHIP/IntegratedProcessMapping) | Integrated multilevel process mapping on hierarchical topologies |
 | [OnlineMultiSection](https://github.com/KaHIP/OnlineMultiSection) | Streaming process mapping and hierarchical graph partitioning |
+
+### Graph Clustering
+
+| Repository | Description |
+|:-----------|:------------|
 | [VieClus](https://github.com/KaHIP/VieClus) | Memetic algorithm for graph clustering (formerly [VieClus org](https://github.com/VieClus)) |
+| [CluStRE](https://github.com/KaHIP/CluStRE) | Streaming graph clustering with multi-stage refinement |
 
 ---
 
