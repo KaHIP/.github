@@ -86,10 +86,9 @@ clustre network.graph --one_pass_algorithm=modularity --mode=strong
 ### FREIGHT
 ```bash
 brew install KaHIP/kahip/freight
-# Hypergraph partitioning (net-list format, use hmetis_to_freight to convert from hMETIS)
-freight_cut hypergraph.netl --k=8
-freight_con hypergraph.netl --k=8
-# Graph partitioning
-freight_graphs network.graph --k=8
+hmetis_to_freight_stream hypergraph.hgr hypergraph.netl  # convert hMETIS to net-list format
+freight_cut hypergraph.netl --k=8                        # hypergraph partitioning (cut-net)
+freight_con hypergraph.netl --k=8                        # hypergraph partitioning (connectivity)
+freight_graphs network.graph --k=8                       # graph partitioning
 ```
 
