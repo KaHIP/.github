@@ -65,6 +65,12 @@ git clone https://github.com/KaHIP/HeiStream.git && cd HeiStream && make
 ./heistream network.graph --k 8 --stream_buffer=1024
 ```
 
+### SharedMap
+```bash
+git clone --recursive https://github.com/KaHIP/SharedMap.git && cd SharedMap && ./build.sh
+./build/SharedMap -g network.graph -h 4:8:8 -d 1:10:100 -e 0.03 -c strong -t 16
+```
+
 ### VieClus
 ```bash
 brew install KaHIP/kahip/vieclus
