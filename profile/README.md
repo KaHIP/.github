@@ -46,6 +46,7 @@ Our research covers a broad range of graph decomposition problems:
 | Repository | Description |
 |:-----------|:------------|
 | [VieCut](https://github.com/KaHIP/VieCut) | Shared-memory parallel minimum cut algorithms (inexact, exact, cactus) |
+| [HeiCut](https://github.com/KaHIP/HeiCut) | Exact minimum cuts in hypergraphs at scale using FPT kernelization |
 | [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) | FPT-based data reduction and exact/heuristic solvers for the maximum cut problem |
 
 ### Graph Clustering
@@ -105,6 +106,14 @@ hmetis_to_freight_stream hypergraph.hgr hypergraph.netl  # convert hMETIS to net
 freight_cut hypergraph.netl --k=8                        # hypergraph partitioning (cut-net)
 freight_con hypergraph.netl --k=8                        # hypergraph partitioning (connectivity)
 freight_graphs network.graph --k=8                       # graph partitioning
+```
+
+### HeiCut
+```bash
+git clone https://github.com/KaHIP/HeiCut.git && cd HeiCut
+./install_mtkahypar.sh
+mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
+./kernelizer path/to/hypergraph.hgr --ordering_type=tight --lp_num_iterations=1
 ```
 
 ### fpt-max-cut
