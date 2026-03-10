@@ -1,4 +1,4 @@
-# KaHIP &mdash; Karlsruhe High Quality Partitioning
+# KaHIP &mdash; High Quality Decomposition
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/KaHIP/.github/main/profile/kahip-logo.png" alt="KaHIP Logo" width="600"/>
