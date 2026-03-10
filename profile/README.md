@@ -47,6 +47,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 
 | Repository | Description |
 |:-----------|:------------|
+| [HeidelbergMotifClustering](https://github.com/KaHIP/HeidelbergMotifClustering) | Local motif clustering via triangle-based flow and partitioning methods |
 | [VieClus](https://github.com/KaHIP/VieClus) | State-of-the-art for highest possible modularity values (formerly [VieClus org](https://github.com/VieClus)) |
 | [CluStRE](https://github.com/KaHIP/CluStRE) | Get good clusters fast via streaming with multi-stage refinement |
 | [ScalableCorrelationClustering](https://github.com/KaHIP/ScalableCorrelationClustering) | Multilevel and memetic signed/correlation graph clustering |
