@@ -38,8 +38,8 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 
 | Repository | Description |
 |:-----------|:------------|
-| [VieClus](https://github.com/KaHIP/VieClus) | Memetic algorithm for graph clustering (formerly [VieClus org](https://github.com/VieClus)) |
-| [CluStRE](https://github.com/KaHIP/CluStRE) | Streaming graph clustering with multi-stage refinement |
+| [VieClus](https://github.com/KaHIP/VieClus) | State-of-the-art for highest possible modularity values (formerly [VieClus org](https://github.com/VieClus)) |
+| [CluStRE](https://github.com/KaHIP/CluStRE) | Get good clusters fast via streaming with multi-stage refinement |
 
 ---
 
