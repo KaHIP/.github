@@ -41,6 +41,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 
 | Repository | Description |
 |:-----------|:------------|
+| [VieCut](https://github.com/KaHIP/VieCut) | Shared-memory parallel minimum cut algorithms (inexact, exact, cactus) |
 | [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) | FPT-based data reduction and exact/heuristic solvers for the maximum cut problem |
 
 ### Graph Clustering
