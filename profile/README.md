@@ -103,6 +103,14 @@ freight_con hypergraph.netl --k=8                        # hypergraph partitioni
 freight_graphs network.graph --k=8                       # graph partitioning
 ```
 
+### VieCut
+```bash
+brew install KaHIP/kahip/viecut
+viecut_mincut network.graph vc                        # heuristic minimum cut
+viecut_mincut_parallel network.graph exact             # exact parallel minimum cut
+viecut_mincut_parallel -s -b network.graph cactus      # most balanced minimum cut
+```
+
 ### HeidelbergMotifClustering
 ```bash
 brew install KaHIP/motifclustering/motifclustering
