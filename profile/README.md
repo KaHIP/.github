@@ -4,13 +4,17 @@
   <img src="https://raw.githubusercontent.com/KaHIP/.github/main/profile/kahip-logo.png" alt="KaHIP Logo" width="600"/>
 </p>
 
-We develop scalable algorithms for **graph partitioning**: dividing a graph's vertices (or edges) into balanced blocks while minimizing the edges (or vertices) cut between them.
+We develop scalable algorithms for **graph decomposition**: partitioning, clustering, cuts, process mapping, and more.
 
-## The Problem
+## What We Work On
 
-Given a graph with **N** vertices and a number **k**, the **graph partitioning problem** asks for a division of the vertex set into **k** blocks of roughly equal size such that the number of edges running between blocks is minimized. The problem is NP-hard and arises in parallel computing (load balancing, domain decomposition), VLSI design, scientific simulations, sparse matrix factorization, route planning, and many other domains.
+Our research covers a broad range of graph decomposition problems:
 
-Our tools tackle this problem at multiple levels of scale and parallelism: from high-quality multilevel methods with evolutionary search, to shared-memory and distributed-memory parallel partitioners, to streaming algorithms that partition graphs too large to fit in memory. We also provide algorithms for **edge partitioning**, **process mapping**, **node ordering** (nested dissection), and **graph clustering**. For **hypergraph partitioning**, see our sister organization [KaHyPar](https://github.com/kahypar).
+- **Graph Partitioning** -- divide a graph into *k* balanced blocks while minimizing the edges cut between them. NP-hard and central to parallel computing, VLSI design, scientific simulations, sparse matrix factorization, and route planning. Our tools range from high-quality multilevel methods with evolutionary search, to shared-memory and distributed-memory parallel partitioners, to streaming algorithms for graphs that do not fit in memory.
+- **Graph Cuts** -- find minimum and maximum edge cuts in undirected graphs. Applications include network reliability, connectivity analysis, and image segmentation. We provide shared-memory parallel algorithms for exact and inexact minimum cuts, cactus representations of all minimum cuts, and multiterminal cuts.
+- **Graph Clustering** -- identify densely connected communities without requiring a predefined number of clusters. Our tools optimize modularity, support motif-based local clustering, correlation clustering on signed graphs, and streaming approaches for large-scale inputs.
+- **Process Mapping** -- assign communicating processes to hardware topologies so that communication cost is minimized. Closely related to graph partitioning, but accounts for hierarchical network distances.
+- **Hypergraph Partitioning** -- see our sister organization [KaHyPar](https://github.com/kahypar).
 
 ---
 
