@@ -70,6 +70,12 @@ brew install KaHIP/kahip/vieclus
 vieclus network.graph --time_limit=60 --output_filename=clustering.txt
 ```
 
+### CluStRE
+```bash
+brew install KaHIP/kahip/clustre
+clustre network.graph --one_pass_algorithm=modularity --mode=strong
+```
+
 ### FREIGHT
 ```bash
 git clone https://github.com/KaHIP/FREIGHT.git && cd FREIGHT && make
