@@ -102,6 +102,12 @@ freight_con hypergraph.netl --k=8                        # hypergraph partitioni
 freight_graphs network.graph --k=8                       # graph partitioning
 ```
 
+### HeidelbergMotifClustering
+```bash
+brew install KaHIP/motifclustering/motifclustering
+heidelberg_motif_clustering --algorithm social --graph network.graph --seed_node 42 --output community.txt
+```
+
 ### SCC (Scalable Correlation Clustering)
 ```bash
 brew install KaHIP/kahip/scc
