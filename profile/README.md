@@ -33,6 +33,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 |:-----------|:------------|
 | [IntegratedProcessMapping](https://github.com/KaHIP/IntegratedProcessMapping) | Integrated multilevel process mapping on hierarchical topologies |
 | [OnlineMultiSection](https://github.com/KaHIP/OnlineMultiSection) | Streaming process mapping and hierarchical graph partitioning |
+| [SharedMap](https://github.com/KaHIP/SharedMap) | Shared-memory algorithm for process mapping |
 
 ### Graph Clustering
 
