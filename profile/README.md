@@ -113,7 +113,7 @@ freight_graphs network.graph --k=8                       # graph partitioning
 git clone https://github.com/KaHIP/HeiCut.git && cd HeiCut
 ./install_mtkahypar.sh
 mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
-./kernelizer path/to/hypergraph.hgr --ordering_type=tight --lp_num_iterations=1
+./build/heicut_kernelizer path/to/hypergraph.hgr --ordering_type=tight --lp_num_iterations=1
 ```
 
 ### fpt-max-cut
