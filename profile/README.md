@@ -37,6 +37,12 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 | [SharedMap](https://github.com/KaHIP/SharedMap) | Shared-memory algorithm for process mapping |
 | [mpicartreorderlib](https://github.com/KaHIP/mpicartreorderlib) | Reordering algorithms for the MPI_Cart_comm reorder flag |
 
+### Graph Cuts
+
+| Repository | Description |
+|:-----------|:------------|
+| [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) | FPT-based data reduction and exact/heuristic solvers for the maximum cut problem |
+
 ### Graph Clustering
 
 | Repository | Description |
