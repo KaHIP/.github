@@ -27,6 +27,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 | [CluStRE](https://github.com/KaHIP/CluStRE) | Streaming graph clustering with multi-stage refinement |
 | [IntegratedProcessMapping](https://github.com/KaHIP/IntegratedProcessMapping) | Integrated multilevel process mapping on hierarchical topologies |
 | [OnlineMultiSection](https://github.com/KaHIP/OnlineMultiSection) | Streaming process mapping and hierarchical graph partitioning |
+| [VieClus](https://github.com/KaHIP/VieClus) | Memetic algorithm for graph clustering (formerly [VieClus org](https://github.com/VieClus)) |
 
 ---
 
