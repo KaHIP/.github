@@ -31,7 +31,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 
 | Repository | Description |
 |:-----------|:------------|
-| [VieM](https://github.com/KaHIP/VieM) | Vienna Mapping and Sparse Quadratic Assignment (formerly [viennamapping](https://github.com/viennamapping)) |
+| [VieM](https://github.com/KaHIP/VieM) | Vienna Mapping and Sparse Quadratic Assignment (superseded by [SharedMap](https://github.com/KaHIP/SharedMap)) |
 | [IntegratedProcessMapping](https://github.com/KaHIP/IntegratedProcessMapping) | Integrated multilevel process mapping on hierarchical topologies |
 | [OnlineMultiSection](https://github.com/KaHIP/OnlineMultiSection) | Streaming process mapping and hierarchical graph partitioning |
 | [SharedMap](https://github.com/KaHIP/SharedMap) | Shared-memory algorithm for process mapping |
