@@ -43,7 +43,7 @@ Our tools tackle this problem at multiple levels of scale and parallelism: from 
 |:-----------|:------------|
 | [VieClus](https://github.com/KaHIP/VieClus) | State-of-the-art for highest possible modularity values (formerly [VieClus org](https://github.com/VieClus)) |
 | [CluStRE](https://github.com/KaHIP/CluStRE) | Get good clusters fast via streaming with multi-stage refinement |
-| [ScalableCorrelationClustering](https://github.com/KaHIP/ScalableCorrelationClustering) | Scalable correlation clustering framework |
+| [ScalableCorrelationClustering](https://github.com/KaHIP/ScalableCorrelationClustering) | Multilevel and memetic signed graph clustering |
 
 ---
 
@@ -93,5 +93,12 @@ hmetis_to_freight_stream hypergraph.hgr hypergraph.netl  # convert hMETIS to net
 freight_cut hypergraph.netl --k=8                        # hypergraph partitioning (cut-net)
 freight_con hypergraph.netl --k=8                        # hypergraph partitioning (connectivity)
 freight_graphs network.graph --k=8                       # graph partitioning
+```
+
+### SCC (Scalable Correlation Clustering)
+```bash
+brew install KaHIP/kahip/scc
+scc signed_network.graph --seed=0                                    # multilevel clustering
+mpirun -n 4 scc_evolutionary signed_network.graph --time_limit=120   # memetic algorithm
 ```
 
