@@ -64,6 +64,12 @@ git clone https://github.com/KaHIP/HeiStream.git && cd HeiStream && make
 ./heistream network.graph --k 8 --stream_buffer=1024
 ```
 
+### VieClus
+```bash
+brew install KaHIP/kahip/vieclus
+vieclus network.graph --time_limit=60 --output_filename=clustering.txt
+```
+
 ### FREIGHT
 ```bash
 git clone https://github.com/KaHIP/FREIGHT.git && cd FREIGHT && make
