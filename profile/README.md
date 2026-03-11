@@ -89,6 +89,12 @@ brew install KaHIP/kahip/sharedmap
 SharedMap -g network.graph -h 4:8:8 -d 1:10:100 -e 0.03 -c strong -t 16
 ```
 
+### OMS (OnlineMultiSection)
+```bash
+brew install KaHIP/kahip/oms
+streammultisection network.graph --k=1024 --enable_mapping --hierarchy_parameter_string=4:16:16 --distance_parameter_string=1:10:100
+```
+
 ### VieClus
 ```bash
 brew install KaHIP/kahip/vieclus
