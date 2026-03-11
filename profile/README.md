@@ -124,10 +124,10 @@ stream_cpi network.graph --k=8 --rle_length=0 --kappa=20
 
 ### HeiCut
 ```bash
-git clone https://github.com/KaHIP/HeiCut.git && cd HeiCut
-./install_mtkahypar.sh
-mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make
-./build/heicut_kernelizer path/to/hypergraph.hgr --ordering_type=tight --lp_num_iterations=1
+brew install KaHIP/kahip/heicut
+heicut_kernelizer hypergraph.hgr --ordering_type=tight --lp_num_iterations=1
+heicut_kernelizer_parallel hypergraph.hgr --ordering_type=tight --lp_num_iterations=1   # parallel
+heicut_submodular hypergraph.hgr --ordering_type=tight                                  # vertex-ordering based
 ```
 
 ### fpt-max-cut
