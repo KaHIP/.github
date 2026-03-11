@@ -77,8 +77,9 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j
 
 ### HeiStream
 ```bash
-git clone https://github.com/KaHIP/HeiStream.git && cd HeiStream && make
-./heistream network.graph --k 8 --stream_buffer=1024
+brew install KaHIP/kahip/heistream
+heistream network.graph --k=8 --batch_size=32768                          # node partitioning
+heistream_edge network.graph --k=8 --batch_size=32768                     # edge partitioning
 ```
 
 ### SharedMap
