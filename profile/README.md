@@ -108,6 +108,12 @@ freight_con hypergraph.netl --k=8                        # hypergraph partitioni
 freight_graphs network.graph --k=8                       # graph partitioning
 ```
 
+### StreamCPI
+```bash
+brew install KaHIP/kahip/streamcpi
+stream_cpi network.graph --k=8 --rle_length=0 --kappa=20
+```
+
 ### HeiCut
 ```bash
 git clone https://github.com/KaHIP/HeiCut.git && cd HeiCut
