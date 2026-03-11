@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/KaHIP/.github/main/profile/kahip-logo.png" alt="KaHIP Logo" width="600"/>
 </p>
 
-We develop scalable algorithms for **graph decomposition**: partitioning, clustering, cuts, process mapping, and more.
+We develop scalable algorithms for **graph decomposition**: partitioning, clustering, cuts, process mapping, and more. Developed at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de).
 
 ## What We Work On
 
