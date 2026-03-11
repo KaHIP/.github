@@ -78,8 +78,9 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j
 ### HeiStream
 ```bash
 brew install KaHIP/kahip/heistream
-heistream network.graph --k=8 --batch_size=32768                          # node partitioning
-heistream_edge network.graph --k=8 --batch_size=32768                     # edge partitioning
+heistream network.graph --k=8 --batch_size=32768                                        # node partitioning
+heistream network.graph --k=8 --batch_size=32768 --buffer_size=65536 --run-parallel     # BuffCut (parallel)
+heistream_edge network.graph --k=8 --batch_size=32768                                   # edge partitioning
 ```
 
 ### SharedMap
