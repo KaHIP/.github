@@ -84,30 +84,6 @@ heistream network.graph --k=8 --batch_size=32768 --buffer_size=65536 --run-paral
 heistream_edge network.graph --k=8 --batch_size=32768                                   # edge partitioning
 ```
 
-### SharedMap
-```bash
-brew install KaHIP/kahip/sharedmap
-SharedMap -g network.graph -h 4:8:8 -d 1:10:100 -e 0.03 -c strong -t 16
-```
-
-### OMS (OnlineMultiSection)
-```bash
-brew install KaHIP/kahip/oms
-streammultisection network.graph --k=1024 --enable_mapping --hierarchy_parameter_string=4:16:16 --distance_parameter_string=1:10:100
-```
-
-### VieClus
-```bash
-brew install KaHIP/kahip/vieclus
-vieclus network.graph --time_limit=60 --output_filename=clustering.txt
-```
-
-### CluStRE
-```bash
-brew install KaHIP/kahip/clustre
-clustre network.graph --one_pass_algorithm=modularity --mode=strong
-```
-
 ### FREIGHT
 ```bash
 brew install KaHIP/kahip/freight
@@ -121,6 +97,26 @@ freight_graphs network.graph --k=8                       # graph partitioning
 ```bash
 brew install KaHIP/kahip/streamcpi
 stream_cpi network.graph --k=8 --rle_length=0 --kappa=20
+```
+
+### SharedMap
+```bash
+brew install KaHIP/kahip/sharedmap
+SharedMap -g network.graph -h 4:8:8 -d 1:10:100 -e 0.03 -c strong -t 16
+```
+
+### OMS (OnlineMultiSection)
+```bash
+brew install KaHIP/kahip/oms
+streammultisection network.graph --k=1024 --enable_mapping --hierarchy_parameter_string=4:16:16 --distance_parameter_string=1:10:100
+```
+
+### VieCut
+```bash
+brew install KaHIP/kahip/viecut
+viecut_mincut network.graph vc                        # heuristic minimum cut
+viecut_mincut_parallel network.graph exact             # exact parallel minimum cut
+viecut_mincut_parallel -s -b network.graph cactus      # most balanced minimum cut
 ```
 
 ### HeiCut
@@ -148,18 +144,22 @@ brew install KaHIP/kahip/fpt-max-cut
 fpt_max_cut -action kernelization -f network.graph -iterations 1 -total-allowed-solver-time 10
 ```
 
-### VieCut
-```bash
-brew install KaHIP/kahip/viecut
-viecut_mincut network.graph vc                        # heuristic minimum cut
-viecut_mincut_parallel network.graph exact             # exact parallel minimum cut
-viecut_mincut_parallel -s -b network.graph cactus      # most balanced minimum cut
-```
-
 ### HeidelbergMotifClustering
 ```bash
 brew install KaHIP/motifclustering/motifclustering
 heidelberg_motif_clustering --algorithm social --graph network.graph --seed_node 42 --output community.txt
+```
+
+### VieClus
+```bash
+brew install KaHIP/kahip/vieclus
+vieclus network.graph --time_limit=60 --output_filename=clustering.txt
+```
+
+### CluStRE
+```bash
+brew install KaHIP/kahip/clustre
+clustre network.graph --one_pass_algorithm=modularity --mode=strong
 ```
 
 ### SCC (Scalable Correlation Clustering)
