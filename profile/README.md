@@ -48,6 +48,7 @@ Our research covers a broad range of graph decomposition problems:
 | [VieCut](https://github.com/KaHIP/VieCut) | Shared-memory parallel minimum cut algorithms (inexact, exact, cactus) |
 | [HeiCut](https://github.com/KaHIP/HeiCut) | Exact minimum cuts in hypergraphs at scale using data reduction |
 | [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) | FPT-based data reduction and exact/heuristic solvers for the maximum cut problem |
+| [HeiConnect](https://github.com/KaHIP/HeiConnect) | Weighted connectivity augmentation algorithms: heuristics, local search, and ILP-based exact approaches (formerly [HeiConnect org](https://github.com/HeiConnect)) |
 
 ### Graph Clustering
 
