@@ -131,6 +131,17 @@ heicut_kernelizer_parallel hypergraph.hgr --ordering_type=tight --lp_num_iterati
 heicut_submodular hypergraph.hgr --ordering_type=tight                                  # vertex-ordering based
 ```
 
+### HeiConnect
+```bash
+git clone --recursive https://github.com/KaHIP/HeiConnect.git && cd HeiConnect
+./build.sh
+# compute cactus graph using VieCut, then run solver
+./extern/VieCut/build/mincut network.graph cactus -t network.xml
+./deploy/solver -g network.graph -c network.xml -a gwc -o augmented.graph            # greedy heuristic
+./deploy/solver -g network.graph -c network.xml -a mst-connect-ls --depth 3           # MST + local search
+./deploy/solver -g network.graph -c network.xml -a eilp --use-initial                 # exact ILP
+```
+
 ### fpt-max-cut
 ```bash
 brew install KaHIP/kahip/fpt-max-cut
